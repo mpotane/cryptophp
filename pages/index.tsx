@@ -1,5 +1,6 @@
 import Seo from "../components/Seo";
 
+//https://api.coingecko.com/api/v3/simple/price?ids=bitcoin%2Cethereum%2Cripple%2Cmatic-network%2Csolana&vs_currencies=php
 export default function Home() {
   return (
     <>
