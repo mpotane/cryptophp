@@ -1,24 +1,22 @@
 import Seo from "../components/Seo";
 import { useForm } from "react-hook-form";
-import useSWR, { Fetcher } from "swr";
+import useSWR from "swr";
 import Loading from "../components/Loading";
 import DataError from "../components/DataError";
-import { Props, IFormInput } from "../interfaces/interface";
+import { Props, IFormInput } from "../interface/interface";
 import Nav from "../components/Nav";
+import axios from "axios";
 
 export default function Home() {
   //react-hook-form
-  const {
-    register,
-    watch,
-  } = useForm<IFormInput>();
+  const { register, watch } = useForm<IFormInput>();
 
   const { amount, crypto } = watch();
   //fetcher function to fetch data from coingecko api
-  const fetcher: Fetcher<Props, string> = async (url) => {
-    const res = await fetch(url);
-    return res.json();
-  };
+  async function fetcher(url: string) {
+    const { data } = (await axios.get(url)) as { data: Props };
+    return data;
+  }
 
   //useSWR hook to fetch data from coingecko api
   const { data, error, isLoading } = useSWR<Props, Error>(
