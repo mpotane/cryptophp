@@ -34,37 +34,44 @@ export default function Home() {
       {data ? (
         <main className="min-h-screen w-full grid place-items-center">
           <section>
-            <p className="py-5 text-2xl font-bold">
-              Convert crypto to Philippine peso
-            </p>
-            <input
-              {...register("amount")}
-              className="rounded-md py-2 px-2 w-full border border-blue-400"
-              type="number"
-              placeholder="Enter Amount to Convert"
-              maxLength={10}
-            />
-            <br />
-            <select
-              {...register("crypto")}
-              className="my-2 py-2 px-1 rounded-md w-full border border-blue-400"
-            >
-              <optgroup label="Crypto">
-                <option value="bitcoin">Bitcoin (BTC)</option>
-                <option value="ethereum">Ethereum (ETH)</option>
-                <option value="ripple">Ripple (XRP)</option>
-                <option value="matic-network">Polygon (MATIC)</option>
-                <option value="solana">Solana (SOL)</option>
-              </optgroup>
-            </select>
-            {amount && crypto && (
+            <div className="bg-base-300 p-8 rounded-xl mx-2">
+              <p className="py-5 text-2xl font-bold">
+                Convert crypto to &#8369;eso
+              </p>
               <input
-                type="text"
-                value={`${data[crypto].php * amount} PHP`}
-                readOnly
-                className="text-gray-500 rounded-md py-2 px-2 w-full border border-blue-400"
+                {...register("amount")}
+                className="rounded-md py-2 px-2 w-full border border-blue-400"
+                type="number"
+                placeholder="Enter Amount to Convert"
+                maxLength={10}
               />
-            )}
+              <br />
+              <select
+                {...register("crypto")}
+                className="my-2 py-2 px-1 rounded-md w-full border border-blue-400"
+              >
+                <optgroup label="Crypto">
+                  <option value="bitcoin">Bitcoin (BTC)</option>
+                  <option value="ethereum">Ethereum (ETH)</option>
+                  <option value="ripple">Ripple (XRP)</option>
+                  <option value="matic-network">Polygon (MATIC)</option>
+                  <option value="solana">Solana (SOL)</option>
+                </optgroup>
+              </select>
+              {amount && crypto && (
+                <input
+                  type="text"
+                  value={`${(data[crypto].php * amount).toLocaleString(
+                    "en-US"
+                  )} PHP`}
+                  readOnly
+                  className="text-gray-500 rounded-md py-2 px-2 w-full border border-blue-400"
+                />
+              )}
+            </div>
+            <p className="grid place-items-center py-3">
+              Made with 💚 by @mpotane
+            </p>
           </section>
         </main>
       ) : (
