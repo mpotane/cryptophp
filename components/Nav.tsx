@@ -22,13 +22,13 @@ export default function Nav() {
     <header>
       <nav>
         <div className="fixed w-full flex flex-wrap gap-5 justify-center items-center p-5">
-          light
+          <label>light</label>
           <input
             type="checkbox"
             className="toggle toggle-warning"
             onClick={handleClick}
           />
-          dark
+          <label>dark</label>
         </div>
       </nav>
     </header>
