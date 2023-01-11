@@ -7,16 +7,17 @@ import { Props, IFormInput } from "../interface/interface";
 import Nav from "../components/Nav";
 import axios from "axios";
 
+//fetcher function to fetch data from coingecko api
+async function fetcher(url: string) {
+  const { data } = (await axios.get(url)) as { data: Props };
+  return data;
+}
+
 export default function Home() {
   //react-hook-form
   const { register, watch } = useForm<IFormInput>();
 
   const { amount, crypto } = watch();
-  //fetcher function to fetch data from coingecko api
-  async function fetcher(url: string) {
-    const { data } = (await axios.get(url)) as { data: Props };
-    return data;
-  }
 
   //useSWR hook to fetch data from coingecko api
   const { data, error, isLoading } = useSWR<Props, Error>(
