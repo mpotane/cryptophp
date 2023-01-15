@@ -3,8 +3,3 @@ export interface Props {
       php: number;
     };
 }
-  
-export interface IFormInput {
-    amount: number;
-    crypto: string;
-}
