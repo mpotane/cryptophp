@@ -81,7 +81,7 @@ export default function Home() {
                   </optgroup>
                 </select>
               </form>
-              {amount && crypto ? (
+              {amount > 0 && crypto ? (
                 <p className="text-center pt-3 font-bold">
                   PHP {(data[crypto].php * amount).toLocaleString("en-US")}
                 </p>
