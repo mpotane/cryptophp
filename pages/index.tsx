@@ -4,7 +4,6 @@ import useSWR, { Key, Fetcher } from "swr";
 import Loading from "../components/Loading";
 import DataError from "../components/DataError";
 import { Props } from "../interface/interface";
-import Nav from "../components/Nav";
 import axios from "axios";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -46,12 +45,11 @@ export default function Home() {
   return (
     <>
       <Seo />
-      <Nav />
       {data ? (
         <main className="min-h-screen w-full grid place-items-center">
           <section>
-            <div className="bg-base-300 p-8 rounded-xl mx-2">
-              <p className="py-5 text-2xl font-bold">
+            <div className="bg-base-100/70 p-8 rounded-xl mx-2">
+              <p className="pb-5 text-2xl font-bold">
                 Convert crypto to &#8369;eso
               </p>
               <form>

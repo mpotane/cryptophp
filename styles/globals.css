@@ -57,6 +57,6 @@ p, h1, h2, h3, h4, h5, h6 {
 /*
   10. Remove focus outline
 */
-input:focus, textarea:focus, select:focus{
+input:focus, textarea:focus, select:focus {
   outline: none;
 }
