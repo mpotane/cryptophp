@@ -7,6 +7,7 @@ import { Props } from "../interface/interface";
 import axios from "axios";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
+import Image from "next/image";
 
 //fetcher function to fetch data from coingecko api
 const url: Key =
@@ -48,7 +49,14 @@ export default function Home() {
       {data ? (
         <main className="min-h-screen w-full grid place-items-center">
           <section>
-            <div className="bg-base-100/70 p-8 rounded-xl mx-2">
+            <Image
+              src="/images/launch.png"
+              width={60}
+              height={60}
+              alt="Blockchain Logo"
+              className="translate-y-7 translate-x-4"
+            />
+            <div className="bg-slate-600/50 p-8 rounded-xl mx-2">
               <p className="pb-5 text-2xl font-bold">
                 Convert crypto to &#8369;eso
               </p>
