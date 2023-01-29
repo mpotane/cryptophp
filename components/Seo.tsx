@@ -3,10 +3,25 @@ import Head from "next/head";
 export default function Seo() {
   return (
     <Head>
-      <title>Crypto to PHP</title>
+      <title>Crypto to Philippine peso</title>
       <meta name="description" content="Convert crypto to Philippine peso" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <meta name="robots" />
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content="https://cryptophp.mpotane.com" />
+      <meta property="og:title" content="Crypto to Philippine peso" />
+      <meta
+        property="og:image"
+        content="https://cryptophp.mpotane.com/images/image.png"
+      />
+      <meta
+        property="og:description"
+        content="Convert crypto to Philippine peso"
+      />
+      <meta property="og:site_name" content="Cryptophp" />
+      <meta property="og:locale" content="en_US" />
+      <meta property="og:image:width" content="1200" />
+      <meta property="og:image:height" content="630" />
       <link
         rel="apple-touch-icon"
         sizes="57x57"
