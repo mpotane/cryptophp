@@ -9,7 +9,7 @@ const inter = Inter({
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <div className={`${inter.variable} font-sans bg-gradient-to-b from-gray-900 via-[#2e0e66] to-slate-900`}>
+    <div className={`${inter.variable} font-sans bg-gradient-to-b from-gray-900 via-slate-700 to-slate-900`}>
       <Component {...pageProps} />
     </div>
   )
