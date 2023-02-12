@@ -65,7 +65,7 @@ export default function Home() {
                   {...register("amount", { valueAsNumber: true })}
                   className="rounded-md py-2 px-2 w-full border border-blue-400"
                   type="number"
-		  inputmode="numeric"
+		  inputMode="numeric"
                   placeholder="Enter Amount to Convert"
                 />
                 {errors.amount ? (
