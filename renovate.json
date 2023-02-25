@@ -3,15 +3,25 @@
   "extends": [
     "config:base"
   ],
-  "lockFileMaintenance": { "enabled": true },
+  "groupName": "all dependencies",
+  "groupSlug": "all",
+  "lockFileMaintenance": {
+    "enabled": false
+  },
   "packageRules": [
     {
+      "groupName": "all dependencies",
+      "groupSlug": "all",
+      "matchPackagePatterns": [
+        "*"
+      ],
       "matchSourceUrls": [
         "https://github.com/zeit/next.js",
         "https://github.com/vercel/next.js"
       ]
     }
   ],
+  "separateMajorMinor": false,
   "schedule": [
     "before 2am"
   ],
