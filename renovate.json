@@ -14,5 +14,6 @@
   ],
   "schedule": [
     "before 2am"
-  ]
+  ],
+  "timezone": "Asia/Manila"
 }
