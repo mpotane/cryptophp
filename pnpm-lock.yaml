@@ -3,7 +3,7 @@ lockfileVersion: 5.4
 specifiers:
   '@hookform/resolvers': ^2.9.10
   '@next/font': 13.2.3
-  '@types/node': 18.14.4
+  '@types/node': 18.14.5
   '@types/react': 18.0.28
   '@types/react-dom': 18.0.11
   autoprefixer: ^10.4.13
@@ -24,7 +24,7 @@ specifiers:
 dependencies:
   '@hookform/resolvers': 2.9.11_react-hook-form@7.43.2
   '@next/font': 13.2.3
-  '@types/node': 18.14.4
+  '@types/node': 18.14.5
   '@types/react': 18.0.28
   '@types/react-dom': 18.0.11
   axios: 1.3.4
@@ -278,8 +278,8 @@ packages:
     resolution: {integrity: sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==}
     dev: false
 
-  /@types/node/18.14.4:
-    resolution: {integrity: sha512-VhCw7I7qO2X49+jaKcAUwi3rR+hbxT5VcYF493+Z5kMLI0DL568b7JI4IDJaxWFH0D/xwmGJNoXisyX+w7GH/g==}
+  /@types/node/18.14.5:
+    resolution: {integrity: sha512-CRT4tMK/DHYhw1fcCEBwME9CSaZNclxfzVMe7GsO6ULSwsttbj70wSiX6rZdIjGblu93sTJxLdhNIT85KKI7Qw==}
     dev: false
 
   /@types/prop-types/15.7.5:
