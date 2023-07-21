@@ -63,7 +63,7 @@ export default function Home() {
               <form>
                 <input
                   {...register("amount", { valueAsNumber: true })}
-                  className="rounded-md py-2 px-2 w-full border border-blue-400"
+                  className="rounded-md py-2 px-2 w-full border border-blue-400 bg-base-100"
                   type="number"
 		  inputMode="numeric"
                   placeholder="Enter Amount to Convert"
@@ -77,9 +77,9 @@ export default function Home() {
                 )}
                 <select
                   {...register("crypto")}
-                  className="my-2 py-2 px-1 rounded-md w-full border border-blue-400"
+                  className="my-2 py-2 px-1 rounded-md w-full border border-blue-400 bg-base-100"
                 >
-                  <optgroup label="Crypto">
+                  <optgroup className="mt-2 rounded" label="Crypto">
                     <option value="bitcoin">Bitcoin (BTC)</option>
                     <option value="ethereum">Ethereum (ETH)</option>
                     <option value="ripple">Ripple (XRP)</option>
