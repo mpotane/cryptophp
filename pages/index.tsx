@@ -7,7 +7,6 @@ import { Props } from "../interface/interface";
 import axios from "axios";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
-import Image from "next/image";
 
 //fetcher function to fetch data from coingecko api
 const url: Key =
@@ -49,7 +48,7 @@ export default function Home() {
       {data ? (
         <main className="min-h-screen w-full grid place-items-center">
           <section>
-            <Image
+            <img
               src="https://markyblobstorage.blob.core.windows.net/images-cryptophp/launch.png"
               width={60}
               height={60}
