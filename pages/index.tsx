@@ -50,7 +50,7 @@ export default function Home() {
         <main className="min-h-screen w-full grid place-items-center">
           <section>
             <Image
-              src="/images/launch.png"
+              src="https://markyblobstorage.blob.core.windows.net/images-cryptophp/launch.png"
               width={60}
               height={60}
               alt="Blockchain Logo"
