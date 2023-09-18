@@ -15,7 +15,7 @@ const nextConfig = {
         protocol: "https",
         hostname: "markyblobstorage.blob.core.windows.net",
         port: '',
-        pathname: '/images-cryptophp/launch.png'
+        pathname: '/images-cryptophp/**'
       },
     ],
   },
