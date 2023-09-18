@@ -54,6 +54,7 @@ export default function Home() {
               width={60}
               height={60}
               alt="Blockchain Logo"
+              priority={true}
               className="translate-y-7 translate-x-4"
             />
             <div className="bg-slate-600/50 p-8 rounded-xl mx-2">
