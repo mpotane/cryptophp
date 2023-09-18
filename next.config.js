@@ -1,7 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  swcMinify: false,
   typescript: {
     // !! WARN !!
     // Dangerously allow production builds to successfully complete even if
@@ -15,7 +14,7 @@ const nextConfig = {
         protocol: "https",
         hostname: "markyblobstorage.blob.core.windows.net",
         port: '',
-        pathname: '/images-cryptophp/**'
+        pathname: '/images-cryptophp/**',
       },
     ],
   },
