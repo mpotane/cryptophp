@@ -28,7 +28,3 @@ jobs:
           api_location: "" # Api source code path - optional
           output_location: ".next/standalone" # Built app content directory - optional
           ###### End of Repository/Build Configurations ######
-      - name: copy files
-        run: |
-          cp -R .next/static .next/standalone/.next/static
-          cp -R ./public .next/standalone/public

@@ -30,10 +30,6 @@ jobs:
           output_location: ".next/standalone" # Built app content directory - optional
           ###### End of Repository/Build Configurations ######
           deployment_environment: "preview"
-      - name: copy files
-        run: |
-          cp -R .next/static .next/standalone/.next/static
-          cp -R ./public .next/standalone/public
 
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
