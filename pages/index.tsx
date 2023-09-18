@@ -8,7 +8,6 @@ import axios from "axios";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import Image from "next/image";
-import blogo from "../public/images/launch.png";
 
 //fetcher function to fetch data from coingecko api
 const url: Key =
@@ -51,7 +50,7 @@ export default function Home() {
         <main className="min-h-screen w-full grid place-items-center">
           <section>
             <Image
-              src={blogo}
+              src="/images/launch.png"
               width={60}
               height={60}
               alt="Blockchain Logo"
