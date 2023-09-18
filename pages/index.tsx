@@ -7,6 +7,7 @@ import { Props } from "../interface/interface";
 import axios from "axios";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
+import Image from "next/image";
 
 //fetcher function to fetch data from coingecko api
 const url: Key =
@@ -48,8 +49,8 @@ export default function Home() {
       {data ? (
         <main className="min-h-screen w-full grid place-items-center">
           <section>
-            <img
-              src="https://markyblobstorage.blob.core.windows.net/images-cryptophp/launch.png"
+            <Image
+              src="https://markyblobstorage.blob.core.windows.net/images-cryptophp/launch.png?sp=r&st=2023-09-18T14:13:20Z&se=2023-12-01T02:00:00Z&spr=https&sv=2022-11-02&sr=b&sig=4GggSaUJb%2BK9hOZ9vyYeKZFVzEmdK5NJeVQty%2FRyB40%3D"
               width={60}
               height={60}
               alt="Blockchain Logo"
@@ -64,7 +65,7 @@ export default function Home() {
                   {...register("amount", { valueAsNumber: true })}
                   className="rounded-md py-2 px-2 w-full border border-blue-400 bg-base-100"
                   type="number"
-		  inputMode="numeric"
+                  inputMode="numeric"
                   placeholder="Enter Amount to Convert"
                 />
                 {errors.amount ? (
