@@ -13,12 +13,11 @@ const nextConfig = {
       {
         protocol: "https",
         hostname: "markyblobstorage.blob.core.windows.net",
-        port: '',
-        pathname: '/images-cryptophp/**',
+        port: "",
+        pathname: "/images-cryptophp/**",
       },
     ],
   },
-  output: "standalone",
 };
 
 module.exports = nextConfig;
