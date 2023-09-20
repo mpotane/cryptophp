@@ -49,13 +49,13 @@ export default function Home() {
       {data ? (
         <main className="min-h-screen w-full grid place-items-center">
           <section>
-            {/* <Image
-              src="https://markyblobstorage.blob.core.windows.net/images-cryptophp/launch.png?sp=r&st=2023-09-18T14:13:20Z&se=2023-12-01T02:00:00Z&spr=https&sv=2022-11-02&sr=b&sig=4GggSaUJb%2BK9hOZ9vyYeKZFVzEmdK5NJeVQty%2FRyB40%3D"
+            <Image
+              src="/images/launch.png"
               width={60}
               height={60}
               alt="Blockchain Logo"
               className="translate-y-7 translate-x-4"
-            /> */}
+            />
             <div className="bg-slate-600/50 p-8 rounded-xl mx-2">
               <p className="pb-5 text-2xl font-bold">
                 Convert crypto to &#8369;eso
