@@ -1,9 +1,9 @@
 import Seo from "../components/Seo";
 import { useForm } from "react-hook-form";
-import useSWR, { Key, Fetcher } from "swr";
+import useSWR, { type Key, type Fetcher } from "swr";
 import Loading from "../components/Loading";
 import DataError from "../components/DataError";
-import { Props } from "../interface/interface";
+import { type Props } from "../interface/interface";
 import axios from "axios";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
