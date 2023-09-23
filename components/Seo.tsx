@@ -97,7 +97,6 @@ export default function Seo() {
         name="msapplication-TileImage"
         content="/favicon/ms-icon-144x144.png"
       />
-      <meta name="theme-color" content="#ffffff" />
       <link rel="canonical" href="https://cryptophp.mpotane.com" />
     </Head>
   );

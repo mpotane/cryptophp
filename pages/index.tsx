@@ -76,6 +76,7 @@ export default function Home() {
                   <br />
                 )}
                 <select
+                  title="Select Crypto"
                   {...register("crypto")}
                   className="my-2 py-2 px-1 rounded-md w-full border border-blue-400 bg-base-100"
                 >
