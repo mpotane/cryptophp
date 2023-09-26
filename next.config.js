@@ -8,17 +8,7 @@ const nextConfig = {
     // !! WARN !!
     ignoreBuildErrors: true,
   },
-  images: {
-    remotePatterns: [
-      {
-        protocol: "https",
-        hostname: "markyblobstorage.blob.core.windows.net",
-        port: "",
-        pathname: "/images-cryptophp/**",
-      },
-    ],
-  },
-  output: "standalone",
+  output: "standalone"
 };
 
 module.exports = nextConfig;
