@@ -5,7 +5,7 @@ const config: SSTConfig = {
   config(_input) {
     return {
       name: "cryptophp",
-      region: "us-east-1",
+      region: "ap-southeast-1",
     };
   },
   stacks(app) {
